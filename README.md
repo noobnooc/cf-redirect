@@ -14,6 +14,7 @@ This project is a simple redirect service implemented using Cloudflare Pages and
 
    - Key: `redirect:twitter`, Value: `https://twitter.com/your-handle`
    - Key: `redirect:github`, Value: `https://github.com/your-username`
+   - Key: `redirect:*`, Value: `https://your-site.com`
 
 3. Create a new Pages project in your Cloudflare Dashboard:
    a. Select your forked repository.
@@ -28,7 +29,7 @@ This project is a simple redirect service implemented using Cloudflare Pages and
    - Variable name: `REDIRECT_KV`
    - KV namespace: Select the KV namespace you created in step 2
 
-5. Deploy the project.
+5. Redeploy the project to apply the settings.
 
 Now, when you visit `your-project.pages.dev/twitter`, it will redirect to the Twitter URL you set in the KV.
 

@@ -14,6 +14,7 @@
 
    - 键：`redirect:twitter`，值：`https://twitter.com/your-handle`
    - 键：`redirect:github`，值：`https://github.com/your-username`
+   - 键：`redirect:*`，值：`https://your-site.com`
 
 3. 在您的 Cloudflare 仪表板中创建一个新的 Pages 项目：
    a. 选择您 Fork 的仓库。
@@ -28,7 +29,7 @@
    - 变量名：`REDIRECT_KV`
    - KV 命名空间：选择您在步骤 2 中创建的 KV 命名空间
 
-5. 部署项目。
+5. 重新部署项目使设置生效。
 
 现在，当您访问 `your-project.pages.dev/twitter` 时，它将重定向到您在 KV 中设置的 Twitter URL。
 
